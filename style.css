@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: white;
+}
+
+.header-logo {
+  height: 16px;
+  width: 16px;
+}
+
+img {
+  height: 40px;
+  width: 100px;
+}
+
+a:link {
+  color: grey;
+  float: right;
+  margin: 10px;
+}
+
+.Header {
+  background-color: #1f2937;
+  height: 300px;
+  width: auto;
+}
+
+.main-body {
+  height: 200px;
+}
+
+.lower-body {
+  background-color: #3882f6;
+}
+
+.quote {
+  height: 200px;
+  background-color: #e5e7eb;
+}
