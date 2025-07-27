@@ -5,40 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Landing Page</title>
-  </head>
-  <body>
-    <div class="Header">
-      <header class="header-logo">
-        <img
-          src="https://coasttocoastac.com/wp-content/uploads/elementor/thumbs/CoastToCoast-LOGOmain-qdz2w1icrzq5rbmlj5n10fjvze82s7wjb1osqfpibk.png"
-          alt="Logo"
-        />
-      </header>
-      <a class="maintenancelink" href="maintenance.html">Maintenance</a>
-      <a class="saleslink" href="sales.html">Sales</a>
-      <a class="servicelink" href="service.html">Service</a>
-      <a class="aboutuslink" href="aboutus.html">About Us</a>
-      <h2>Coast To Coast Heating and Air Conditioning</h2>
-      <p>Experience the highest standard</p>
-      <button>Sign Up</button>
-      <img src="" alt="Placeholder" />
+ 
+  <header>
+    <div class="container header">
+      <img src="data:image/png;base64,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" alt="Header" class="header">
+      <div class="logo"></div>
+      <nav>
+        <a href="#">Service</a>
+        <a href="#">Sales</a>
+        <a href="#">Maintenance</a>
+        <a href="#">About Us</a>
+      </nav>
     </div>
-    <div class="main-body">
-      <h3>Trusted Partners</h3>
-      <img src="" alt="Trane" />
-      <img src="" alt="Carrier" />
-      <img src="" alt="Rheem" />
-      <img src="" alt="Goodman" />
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Coast To Coast Heating and Air Conditioning</h1>
+      <p>The best A/C company to exist. You know it, I know it, We know it.</p>
+      <button>Sign up</button>
     </div>
-    <div class="quote">
-      <p>Experience The Highest Standards.</p>
+    <div class="hero-img">
+      <div class="img-placeholder">Slideshow when i have more photos</div>
     </div>
-    <footer>
-      <div class="lower-body">
-        <p>Call to Action! Its Time!</p>
-        <p>Sign up now to save money, while staying cool</p>
-        <button>Sign Up</button>
+  </section>
+
+  <section class="info container">
+    <h2>Trusted Partners.</h2>
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="square"></div>
+        <p>Trane</p>
       </div>
-    </footer>
-  </body>
+      <div class="info-item">
+        <div class="square"></div>
+        <p>Carrier</p>
+      </div>
+      <div class="info-item">
+        <div class="square"></div>
+        <p>Rheem</p>
+      </div>
+      <div class="info-item">
+        <div class="square"></div>
+        <p>Goodman</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="container">
+      <p class="quote-text">Experience The Highest Standards</p>
+      <p class="quote-author">-Peter</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-box">
+      <div>
+        <h3>Call to action! It’s time!</h3>
+        <p>Sign up for our membership program to save money, while staying cool!</p>
+      </div>
+      <button>Sign up</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Copyright © Jay Rolls 2025</p>
+    </div>
+  </footer>
+
+</body>
 </html>
